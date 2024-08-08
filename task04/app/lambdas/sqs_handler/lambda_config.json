@@ -11,6 +11,7 @@
   "dependencies": [],
   "event_sources": [
     {
+      "arn": "arn:aws:sqs:eu-central-1:196241772369:async_queue",
       "resource_type": "sqs_trigger",
       "target_queue": "async_queue",
       "batch_size": 10
