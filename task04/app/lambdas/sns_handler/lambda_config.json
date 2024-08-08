@@ -10,6 +10,7 @@
   "lambda_path": "lambdas\\sns_handler",
   "dependencies": [],
   "event_sources":  [{
+    "arn": "arn:aws:sqs:eu-central-1:196241772369:lambda_topic",
     "resource_type": "sns_trigger",
     "target_queue": "lambda_topic",
     "batch_size": 10
