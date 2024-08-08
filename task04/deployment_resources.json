@@ -3,7 +3,6 @@
     "policy_content": {
       "Statement": [
         {
-          "Effect": "Allow",
           "Action": [
             "logs:CreateLogGroup",
             "logs:CreateLogStream",
@@ -22,11 +21,8 @@
             "sns:Subscribe",
             "sns:Publish",
             "sns:Receive",
-            "lambda:CreateEventSourceMapping",
-            "lambda:ListEventSourceMappings",
-            "lambda:ListFunctions",
           ],
-    
+          "Effect": "Allow",
           "Resource": "*"
         }
       ],
