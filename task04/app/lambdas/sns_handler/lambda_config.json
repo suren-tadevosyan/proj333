@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "name": "sns_handler",
+  "func_name": "lambdas/sns_handler/index.handler",
+  "resource_type": "lambda",
+  "iam_role_name": "sns_handler-role",
+  "runtime": "nodejs20.x",
+  "memory": 128,
+  "timeout": 100,
+  "lambda_path": "lambdas\\sns_handler",
+  "dependencies": [],
+  "event_sources":  [{
+    "resource_type": "sns_trigger",
+    "target_queue": "lambda_topic",
+    "batch_size": 10
+  }],
+  "env_variables": {},
+  "publish_version": true,
+  "alias": "${lambdas_alias_name}",
+  "url_config": {},
+  "ephemeral_storage": 512
+}
